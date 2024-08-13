@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(53, 7, 7, 0.1);
+}
+
+.navbar {
+    padding: 0 15px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Augmenté de 50px à 80px */
+    height: auto;
+    margin-right: 10px;
+}
+
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #195885;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.btn-primary {
+    background-color: #195885;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #195885;
+}
+
+.navbar-nav .nav-link i {
+    color: #195885;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover i {
+    color: #ffffff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #ffffff;
+}
+
+.btn-primary {
+    background-color: #0023DB;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0018a0;
+}
+.services-section {
+    background-color: #195885;
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    background-color: #ffffff; /* Fond blanc pour les grids */
+    color: #195885; /* Texte en bleu */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px; /* Coins arrondis */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item i {
+    font-size: 3rem;
+    color: #195885; /* Icônes en bleu */
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #195885; /* Titre en bleu */
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #333333; /* Description en gris foncé */
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #0023DB;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #0018a0;
+}
+
+@media (min-width: 768px) {
+    .service-item {
+        margin-bottom: 0;
+    }
+}
+
+.carriere-section {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #195885;
+}
+
+.definition {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.definition h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #195885;
+}
+
+.definition p {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.option {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 360px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.option img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.option h3 {
+    font-size: 1.5rem;
+    color: #195885;
+    margin-bottom: 15px;
+}
+
+.option p.short-text {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.option p.long-text {
+    font-size: 1rem;
+    color: #333333;
+    display: none;
+    margin-bottom: 20px;
+}
+
+.option .toggle-btn {
+    background-color: #0023DB;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4
+
+
+
+
+/* Styles du footer */
+footer {
+    background-color: #195885;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #d0d0d0;
+}
+
+/* Optionnel : Styles pour les icônes Font Awesome */
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"><path d="M0 2.5C0 1.94772 0.447715 1.5 1 1.5H15C15.5523 1.5 16 1.94772 16 2.5C16 3.05228 15.5523 3.5 15 3.5H1C0.447715 3.5 0 3.05228 0 2.5Z" fill="%230023DB"/><path d="M0 8C0 7.44772 0.447715 7 1 7H15C15.5523 7 16 7.44772 16 8C16 8.55228 15.5523 9 15 9H1C0.447715 9 0 8.55228 0 8Z" fill="%230023DB"/><path d="M0 13.5C0 12.9477 0.447715 12.5 1 12.5H15C15.5523 12.5 16 12.9477 16 13.5C16 14.0523 15.5523 14.5 15 14.5H1C0.447715 14.5 0 14.0523 0 13.5Z" fill="%230023DB"/></svg>');
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin-top: 15px;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+}
